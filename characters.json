@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Eren Yeager",
+    "gender": "Male",
+    "role": "MC",
+    "image": "pics/humans/eren.jpg",
+    "spoiler": "He can transform into a Titan!"
+  },
+  {
+    "name": "Mikasa Ackerman",
+    "gender": "Female",
+    "role": "Supporting",
+    "image": "pics/humans/mikasa.jpg",
+    "spoiler": "Her skills make her nearly unstoppable."
+  },
+  {
+    "name": "Armin Arlert",
+    "gender": "Male",
+    "role": "Supporting",
+    "image": "pics/humans/armin.jpg",
+    "spoiler": "Looks weak but is very intelligent."
+  },
+  {
+    "name": "Levi Ackerman",
+    "gender": "Male",
+    "role": "Supporting",
+    "image": "pics/humans/levi.jpg",
+    "spoiler": "He is humanity's strongest soldier."
+  }
+]
