@@ -7,35 +7,36 @@
     <title>Sijey Gallery</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="icon" href="pics\artuz_logo (2).svg" type="image/png">
 </head>
 
 <body>
-
+    <!--navbar-->
     <div class="container-fluid position-sticky top-0 p-0 p-lg-3" style="z-index:999;">
         <div class="container-xl p-0">
             <div id="navbar" class="navigation shadow-sm p-4 px-xl-5 rounded-5 border-bottom"
                 style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); transition: all 0.5s;">
                 <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
-
-                    <!-- BRAND SECTION -->
                     <div class="brand d-flex align-items-center">
-                        <a href="https://sijey-cjaa.github.io/" target="" style="text-decoration:none;">
-                            <img src="pics\artuz_logo (2).svg" alt="CJ's Profile Logo"
+                        <a href="https://sijey-cjaa.github.io/" style="text-decoration:none;">
+                            <img src="pics/artuz_logo (2).svg" alt="CJ's Profile Logo"
+                                style="height:90px; width:90px; border-radius:20px; object-fit:cover;">
+                        </a>
+
+                        <a href="https://sijey-cjaa.github.io/sijey-place-showcase/" class="ms-2"
+                            style="text-decoration:none;">
+                            <img src="pics\AOT_LOGO.png" alt="Attack on Titan Logo"
                                 style="height:90px; width:90px; border-radius:20px; object-fit:cover;">
                         </a>
                         <div class="ms-3 d-flex flex-column" style="line-height:1.2;">
-                            <span class="fw-bold fs-4 text-body">GALLERY</span>
+                            <span class="fw-bold fs-4 text-body">ATTACK ON TITAN</span>
                         </div>
                     </div>
-
                     <!-- NAV LINKS -->
                     <div class="d-flex flex-row mt-3 mt-lg-0 flex-wrap justify-content-center align-items-center nav-links text-body"
                         style="gap:.5rem;">
                         <a href="#" class="text-body me-3" style="text-decoration:none;"><small>Home</small></a>
-                        <a href="explore.html" class="text-body me-3" style="text-decoration:none;"><small>Main
-                                Gallery</small></a>
-
+                        <a href="#gallery" class="text-body me-3"
+                            style="text-decoration:none;"><small>Explore</small></a>
                         <button id="modeToggle" type="button"
                             class="btn btn-sm ms-3 px-3 py-1 fw-semibold text-light border-0"
                             style="background-color:#0078d7; border-radius:20px; outline:none; cursor:pointer;"
@@ -48,78 +49,25 @@
 
 
 
-    <div class="container-fluid px-xl-5 py-5 bg-black text-white">
-        <div class="row">
-            <div class="col-lg-12 mx-auto text-center">
-                <div class="h1">
-                    404
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-lg-12 mx-auto text-center">
-                <div class="h3">
-                    CONTENT NOT FOUND
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-lg-12 mx-auto text-start">
-                <div class="h5">
-                    cards:
-                </div>
-                <div id="cardContainer"></div>
-            </div>
-        </div>
-    </div>
 
 
-    <div class="container-fluid p-3 shadow-sm text-center border-top"
-        style="background-color:#f8f9fa; position:relative; z-index:1;">
+    <!--footer-->
+    <div class="container-fluid glass mt-4 p-5 shadow-sm text-center border-top rounded-top-5">
         <div class="row">
             <div class="col">
+                <div class="h3">Shinzo wo Sasageyo!</div>
                 <div class="my-4 text-primary">
-                    Made with love<br>
+                    <small>
+                        Made with love
+                    </small>
                 </div>
-                <div class="mt-5 text-black">sijey artuz</div>
+                <div class="mt-5 text-gray">sijey artuz</div>
             </div>
         </div>
     </div>
 
 
-    <script>
-        const images = [
-            "pics/artuz_logo (2).svg",
-            "pics/artuz_logo (2).svg",
-            "pics/artuz_logo (2).svg",
-            "pics/artuz_logo (2).svg"
-        ];
-
-        const descriptions = [
-            "PICTURE 1",
-            "PICTURE 2",
-            "PICTURE 3",
-            "PICTURE 4"
-        ];
-
-        const container = document.getElementById("cardContainer");
-
-        for (let i = 0; i < images.length; i++) {
-            container.innerHTML += `
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="card" style="width: 100%;">
-                    <img src="${images[i]}" class="card-img-top">
-                    <div class="card-body">
-                        <p class="card-text">${descriptions[i]}</p>
-                    </div>
-                </div>
-            </div>
-        `;
-        }
-    </script>
-
-
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
