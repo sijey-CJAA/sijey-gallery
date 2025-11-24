@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const wrapper = document.getElementById('contentWrapper');
   const html = document.documentElement;
 
+  // --- NIGHT/LIGHT MODE ---
   function applyDark() {
     html.setAttribute('data-bs-theme', 'dark');
     if (wrapper) {
@@ -42,37 +43,69 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- CHARACTER CARDS WITH NAME, GENDER, ROLE, AND SPOILER COLLAPSE ---
+  // --- HUMAN CHARACTERS ---
   fetch('characters.json')
     .then(response => response.json())
     .then(characters => {
-      var container = document.getElementById("characters");
-      for (var i = 0; i < characters.length; i++) {
-        const collapseId = `spoiler${i}`;
+      const container = document.getElementById("characters");
+      characters.forEach((char, i) => {
+        const collapseId = `humanSpoiler${i}`;
         container.innerHTML += `
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <div class="card shadow-sm" style="width: 500px; height: 500px;">
-              <img src="${characters[i].image}" class="card-img-top" alt="${characters[i].name}" 
-                   style="height: 300px; object-fit: cover;">
+              <img src="${char.image}" class="card-img-top" alt="${char.name}" style="height:300px; object-fit:cover;">
               <div class="card-body d-flex flex-column justify-content-between">
                 <div>
-                  <h5 class="card-title">${characters[i].name}</h5>
-                  <p class="card-text">${characters[i].gender}, ${characters[i].role}</p>
+                  <h5 class="card-title">${char.name}</h5>
+                  <p class="card-text">${char.gender}, ${char.role}</p>
                 </div>
-                <button class="btn btn-warning mt-2" type="button" data-bs-toggle="collapse" 
+                <button class="btn btn-warning mt-2" type="button" data-bs-toggle="collapse"
                         data-bs-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}">
                   Spoiler
                 </button>
                 <div class="collapse mt-2" id="${collapseId}">
                   <div class="card card-body">
-                    <p>${characters[i].spoiler}</p>
+                    <p>${char.spoiler}</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         `;
-      }
+      });
     })
-    .catch(error => console.error('MAY MALI:', error));
+    .catch(error => console.error('Error loading Humans:', error));
+
+  // --- TITANS ---
+  fetch('titans.json')
+    .then(response => response.json())
+    .then(titans => {
+      const container = document.getElementById("titans-container");
+      titans.forEach((titan, i) => {
+        const collapseId = `titanSpoiler${i}`;
+        container.innerHTML += `
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+            <div class="card shadow-sm" style="width: 500px; height: 500px;">
+              <img src="${titan.image}" class="card-img-top" alt="${titan.name}" style="height:300px; object-fit:cover;">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">${titan.name}</h5>
+                  <p class="card-text">${titan.type}</p>
+                </div>
+                <button class="btn btn-warning mt-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}">
+                  Spoiler (Holder)
+                </button>
+                <div class="collapse mt-2" id="${collapseId}">
+                  <div class="card card-body">
+                    <p>Holder: ${titan.holder}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+    })
+    .catch(error => console.error('Error loading Titans:', error));
 });

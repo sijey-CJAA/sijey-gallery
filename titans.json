@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Attack Titan",
+        "type": "Attack",
+        "holder": "Eren Yeager",
+        "image": "pics/attack.jpg"
+    },
+    {
+        "name": "Colossal Titan",
+        "type": "Colossal",
+        "holder": "Bertolt Hoover",
+        "image": "pics/colossal.jpg"
+    },
+    {
+        "name": "Armored Titan",
+        "type": "Armored",
+        "holder": "Reiner Braun",
+        "image": "pics/armored.jpg"
+    },
+    {
+        "name": "Female Titan",
+        "type": "Female",
+        "holder": "Annie Leonhart",
+        "image": "pics/female.jpg"
+    },
+    {
+        "name": "Beast Titan",
+        "type": "Beast",
+        "holder": "Zeke Yeager",
+        "image": "pics/beast.jpg"
+    }
+]
