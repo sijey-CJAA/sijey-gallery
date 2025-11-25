@@ -26,5 +26,89 @@
     "role": "Supporting",
     "image": "pics/humans/levi.jpg",
     "spoiler": "He is humanity's strongest soldier."
+  },
+  {
+    "name": "Annie Leonhart",
+    "gender": "Female",
+    "role": "Supporting",
+    "image": "pics/humans/annie.jpg",
+    "spoiler": "Silent but extremely skilled."
+  },
+  {
+    "name": "Bertholdt Hoover",
+    "gender": "Male",
+    "role": "Supporting",
+    "image": "pics/humans/bertholdt.jpg",
+    "spoiler": "Tall and surprisingly gentle."
+  },
+  {
+    "name": "Connie Springer",
+    "gender": "Male",
+    "role": "Supporting",
+    "image": "pics/humans/connie.jpg",
+    "spoiler": "Energetic and loyal to his friends."
+  },
+  {
+    "name": "Erwin Smith",
+    "gender": "Male",
+    "role": "Commander",
+    "image": "pics/humans/erwin.jpg",
+    "spoiler": "A leader who inspires everyone."
+  },
+  {
+    "name": "Hange Zoë",
+    "gender": "Female",
+    "role": "Squad Leader",
+    "image": "pics/humans/hanji.jpg",
+    "spoiler": "Curious and obsessed with Titans."
+  },
+  {
+    "name": "Historia Reiss",
+    "gender": "Female",
+    "role": "Supporting",
+    "image": "pics/humans/historia.jpg",
+    "spoiler": "Her true identity is important."
+  },
+  {
+    "name": "Jean Kirschtein",
+    "gender": "Male",
+    "role": "Supporting",
+    "image": "pics/humans/jean.jpg",
+    "spoiler": "Honest and unexpectedly reliable."
+  },
+  {
+    "name": "Reiner Braun",
+    "gender": "Male",
+    "role": "Supporting",
+    "image": "pics/humans/reiner.jpg",
+    "spoiler": "Strong and protective."
+  },
+  {
+    "name": "Sasha Blouse",
+    "gender": "Female",
+    "role": "Supporting",
+    "image": "pics/humans/sasha.jpg",
+    "spoiler": "Loves food more than anyone."
+  },
+  {
+    "name": "Ymir",
+    "gender": "Female",
+    "role": "Supporting",
+    "image": "pics/humans/ymir.jpg",
+    "spoiler": "Independent and mysterious."
+  },
+  {
+    "name": "Ymir Fritz",
+    "gender": "Female",
+    "role": "Lore",
+    "image": "pics/humans/ymirfritz.jpg",
+    "spoiler": "The origin of Titan powers."
+  },
+  {
+    "name": "Zeke Yeager",
+    "gender": "Male",
+    "role": "Antagonist",
+    "image": "pics/humans/zeke.jpg",
+    "spoiler": "Extremely intelligent and calm."
   }
 ]

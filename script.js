@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar.style.background = "rgba(0, 0, 0, 0.4)";
       navbar.style.border = "1px solid rgba(255,255,255,0.2)";
     }
-    if (button) button.textContent = '☀️ Light';
+    if (button) button.textContent = '☀️';
   }
 
   function applyLight() {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar.style.background = "rgba(255, 255, 255, 0.6)";
       navbar.style.border = "1px solid rgba(255,255,255,0.3)";
     }
-    if (button) button.textContent = '🌙 Night';
+    if (button) button.textContent = '🌑';
   }
 
   if (localStorage.getItem('theme') === 'dark') applyDark();

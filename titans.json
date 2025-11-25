@@ -52,5 +52,23 @@
         "type": "Founding",
         "holder": "Ymir Fritz",
         "image": "pics/titans/founding.jpg"
+    },
+    {
+        "name": "Rod Reiss",
+        "type": "Rod",
+        "holder": "Rod Reiss",
+        "image": "pics/titans/rod.jpg"
+    },
+    {
+        "name": "Normal Titan",
+        "type": "Normal",
+        "holder": "Many Individuals",
+        "image": "pics/titans/normal.jpg"
+    },
+    {
+        "name": "Abnormal Titan",
+        "type": "Abnormal",
+        "holder": "Many Individuals",
+        "image": "pics/titans/abnormal.jpg"
     }
 ]
