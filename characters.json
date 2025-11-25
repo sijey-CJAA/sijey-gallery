@@ -110,5 +110,33 @@
     "role": "Antagonist",
     "image": "pics/humans/zeke.jpg",
     "spoiler": "Extremely intelligent and calm."
+  },
+  {
+    "name": "Lara Tybur",
+    "gender": "Female",
+    "role": "Supporting",
+    "image": "pics/humans/lara.jpg",
+    "spoiler": "plot twist character."
+  },
+  {
+    "name": "Rod Reiss",
+    "gender": "Male",
+    "role": "Supporting",
+    "image": "pics/humans/rodreis.jpg",
+    "spoiler": "royal blood."
+  },
+  {
+    "name": "Porco Galliard",
+    "gender": "Male",
+    "role": "Supporting",
+    "image": "pics/humans/porco.jpg",
+    "spoiler": "Jaws."
+  },
+  {
+    "name": "Pieck Finger",
+    "gender": "Female",
+    "role": "Supporting",
+    "image": "pics/humans/pieck.jpg",
+    "spoiler": "Cart Titan."
   }
 ]

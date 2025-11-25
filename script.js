@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const wrapper = document.getElementById('contentWrapper');
   const html = document.documentElement;
 
-  // --- NIGHT/LIGHT MODE ---
   function applyDark() {
     html.setAttribute('data-bs-theme', 'dark');
     if (wrapper) {
@@ -43,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- HUMAN CHARACTERS ---
   fetch('characters.json')
     .then(response => response.json())
     .then(characters => {
@@ -76,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .catch(error => console.error('Error loading Humans:', error));
 
-  // --- TITANS ---
   fetch('titans.json')
     .then(response => response.json())
     .then(titans => {
