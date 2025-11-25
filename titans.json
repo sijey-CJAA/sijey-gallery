@@ -28,5 +28,29 @@
         "type": "Beast",
         "holder": "Zeke Yeager",
         "image": "pics/titans/beast.jpg"
+    },
+    {
+        "name": "Cart Titan",
+        "type": "Cart",
+        "holder": "Pieck Finger",
+        "image": "pics/titans/cart.jpg"
+    },
+    {
+        "name": "Jaw Titan",
+        "type": "Jaw",
+        "holder": "Porco Galliard",
+        "image": "pics/titans/jaw.jpg"
+    },
+    {
+        "name": "War Hammer Titan",
+        "type": "War Hammer",
+        "holder": "Lara Tybur",
+        "image": "pics/titans/warhammer.jpg"
+    },
+    {
+        "name": "Founding Titan",
+        "type": "Founding",
+        "holder": "Ymir Fritz",
+        "image": "pics/titans/founding.jpg"
     }
 ]
